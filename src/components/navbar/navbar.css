@@ -1,0 +1,123 @@
+.navbar{
+    width: 100%;
+   padding-inline: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+.l-nav{
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    padding-block: 10px;
+    padding-inline-start: 20px;
+  
+}
+.l-nav > a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+.r-nav{
+    width: 50%;
+    
+}
+.r-nav > ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-inline-end: 20px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+   
+    
+}
+ul > li{
+    /* border: 1px solid red; */
+    padding-block: 7px;
+    padding-inline: 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight:500;
+    color: #fff;
+}
+ul > li:hover{
+    background-color: rgba(211, 211, 211, 0.178);
+    /* opacity: 0.4; */
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid yellow; */
+}
+.dropdown > span {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid orange; */
+    font-size: 16px;
+
+}
+
+
+.sign-up{
+    background-color: #fff;
+    color: #000;
+}
+.sign-up:hover{
+    background-color: #fff;
+    color: #000;
+}
+/* .nav{
+   
+    background-color: rebeccapurple;
+    opacity: 0.5;
+} */
+/* ul >  li{
+    padding: 10px;
+    border: 1px solid rebeccapurple;
+
+} */
+
+
+.language{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.language >  span:first-child{
+  display: flex;
+  align-items: center;
+}
+.products{
+    display: flex;
+    gap: 5px;
+
+}
+
+.products > span:first-child{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.products > span {
+    /* border: 1px solid yellow; */
+}
+
+
+.companymenu{
+    width: 180px;
+    height: 0px;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 56px;
+    left: 165px;
+    /* transition: height ease 5s; */
+    transition: all 2s ease-in-out;
+}
