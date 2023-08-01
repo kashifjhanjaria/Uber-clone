@@ -1,3 +1,5 @@
+
+import FourthSection from "../fourthsection/FourthSection";
 import Hero from "../herosection/Hero";
 import SecondSection from "../secondsection/SecondSection";
 import ThirdSection from "../thirdsection/ThirdSection";
@@ -9,6 +11,7 @@ const Home = ()=>{
             <Hero/>
             <SecondSection/>
             <ThirdSection/>
+            <FourthSection/>
         </div>
     )
 }

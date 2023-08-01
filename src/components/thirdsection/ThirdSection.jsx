@@ -1,6 +1,6 @@
 import AdditionalInformation from "../component/additionalinfo/AdditionalInformation";
 import Heading from "../component/heading/Heading"
-import Description from "../component/heading/description/Description";
+import Description from "../component/description/Description";
 import "./thirdsection.css"
 const ThirdSection = ()=>{
     return(

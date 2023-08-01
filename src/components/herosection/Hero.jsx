@@ -1,4 +1,6 @@
 import AdditionalInformation from "../component/additionalinfo/AdditionalInformation";
+import Description from "../component/description/Description";
+import Heading from "../component/heading/Heading";
 import "./hero.css";
 import {NavLink} from "react-router-dom"
 const Hero = ()=>{
@@ -38,8 +40,8 @@ const Hero = ()=>{
                 </div>
             </div>
             <div className="hero-section-description">
-            <h1>Get in the driver’s seat and get paid</h1>
-            <p>Drive on the platform with the largest network of active riders.</p>
+            <h1><Heading heading="Get in the driver’s seat and get paid" /></h1>
+            <p><Description description="Drive on the platform with the largest network of active riders." /></p>
             <div className="hero-section-btn">
             <button>Sign up to drive</button>
             </div>

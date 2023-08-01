@@ -1,0 +1,29 @@
+.fourthsection
+{
+    padding-block: 30px;
+    padding-inline: 100px;
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    gap: 10px;
+}
+.fourth-section-box{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 15px;
+    padding-inline: 10px;
+   
+}
+.fourth-section-box > h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.fourth-section-box > p{
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+}
+.fourth-section-icon > svg{
+    font-size: 20px;
+}
