@@ -114,10 +114,89 @@ ul > li:hover{
 .companymenu{
     width: 180px;
     height: 0px;
-    background-color: rebeccapurple;
+    background-color: rgba(23, 14, 14, 0.767);
     position: absolute;
     top: 56px;
     left: 165px;
+    z-index: 999;
     /* transition: height ease 5s; */
     transition: all 2s ease-in-out;
+    /* display: flex;
+    flex-direction: column; */
+}
+.companymenu > ul{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.companymenu > ul > li{
+    border-radius: none !important ;
+}
+
+
+.languageContainer{
+    width: 100%;
+    height:0vh ;
+    background-color: #fff;
+    position: absolute;
+    top:57px;
+    left: 0;
+    /* padding-block: 60px; */
+    padding-inline: 170px;
+    transition: height .3s ease;
+    overflow: hidden;
+}
+.close{
+    /* border: 1px solid red; */
+    text-align:end;
+    font-size:1.5vw;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: end;
+    
+    
+}
+.closeicon{
+    width: 4vw;
+    height: 9vh;
+    /* border: 1px solid yellow; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.closeicon:hover{
+    background-color: rgba(211, 211, 211, 0.299);
+}
+
+.languageContainer > h1{
+    /* border: 1px solid yellow; */
+    
+}
+.selectedbtn{
+    margin-top: 50px;
+    display: flex;
+   gap: 5px;
+    align-items: center;
+}
+.lang{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 700;
+}
+.langselected{
+    background-color: rgba(128, 128, 128, 0.305);
+}
+.lang:hover{
+    background-color: rgba(128, 128, 128, 0.305);
+}
+.language:hover .languageContainer{
+    height:calc(100vh - 58px) ;
 }
