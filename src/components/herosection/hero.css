@@ -102,36 +102,4 @@ border-radius: 8px;
 cursor: pointer;
 
 }
-.learn{
-    border-bottom: thin solid lightgray;
-    padding-block: 5px;
-    width: 290px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-  
-}
 
-.learn > p{
-  
-    padding-block: 10px;
-   
-}
-/* .learn:hover{
-    border-bottom: thin solid black;
-    width: 400px;
-} */
-.learn-border{
-    border: thin solid black;
-  
-    height: 1px ;
-    top: 50px;
-    width: 0px;
-    transition: width 1s ease;
-    position: absolute;
-    overflow: hidden;
-    margin-left: -2px;
-}
-.learn:hover .learn-border{
-    width: 292px;
-}

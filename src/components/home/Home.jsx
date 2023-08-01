@@ -1,5 +1,6 @@
 import Hero from "../herosection/Hero";
 import SecondSection from "../secondsection/SecondSection";
+import ThirdSection from "../thirdsection/ThirdSection";
 import "./home.css"
 
 const Home = ()=>{
@@ -7,6 +8,7 @@ const Home = ()=>{
         <div className="home">
             <Hero/>
             <SecondSection/>
+            <ThirdSection/>
         </div>
     )
 }

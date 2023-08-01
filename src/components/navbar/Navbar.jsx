@@ -8,25 +8,11 @@ import {NavLink} from "react-router-dom"
 const Navbar = ()=>{
     const[opencompanymenu , setOpenCompanyMenu] = useState(false);
     const [lang , setLang] = useState(false);
-    // console.log(opencompanymenu);
-    // const body = document.body;
-    const dropdonwArea = useRef(false)
-    // const bodyRef = useRef(body)
+   
 
     const openCompanyMenuHandle = (e)=>{
         setOpenCompanyMenu(!opencompanymenu);
-        console.log(opencompanymenu);
-        // console.log(e);
-        // console.log(dropdonwArea);
-        // console.log(dropdonwArea.current = !dropdonwArea.current);
-        // console.log(dropdonwArea);
-        // console.log(bodyRef);
-        // console.log(opencompanymenu);
-        // if (opencompanymenu === false) {
-        //     bodyRef.current.addEventListener('click' , ()=>{
-        //         setOpenCompanyMenu(false);
-        //     })
-        // }
+       
         
 
     }
@@ -64,7 +50,7 @@ const Navbar = ()=>{
 
             
        {opencompanymenu
-        ? <div className="companymenu" ref={dropdonwArea} id="dropdonwArea"  style={{height:"300px"}}>
+        ? <div className="companymenu"  id="dropdonwArea"  style={{height:"300px"}}>
             <ul>
                 <li>About us</li>
                 <li>Our offerings</li>
@@ -81,7 +67,7 @@ const Navbar = ()=>{
 
 
 
-       {lang ? <div className="languageContainer" style={{height:'calc(100vh - 58px)' }}>
+       {lang ? <div className="languageContainer" style={{height:'calc(100vh - 58px)', zIndex:"99999" }}>
         <div className="close" onClick={closelangcontainer}> <div className="closeicon"><ImCross/></div> </div>
         <h1 className="selectyour" >Select your preferred language</h1>
         <div className="selectedbtn">

@@ -1,3 +1,4 @@
+import AdditionalInformation from "../component/additionalinfo/AdditionalInformation";
 import "./hero.css";
 import {NavLink} from "react-router-dom"
 const Hero = ()=>{
@@ -42,8 +43,7 @@ const Hero = ()=>{
             <div className="hero-section-btn">
             <button>Sign up to drive</button>
             </div>
-            <div className="learn"><p>Learn more about driving and delivering</p>
-            <div className="learn-border"></div></div>
+            <AdditionalInformation title="Learn more about driving and delivering"/>
             </div>
            </div>
         </section>
