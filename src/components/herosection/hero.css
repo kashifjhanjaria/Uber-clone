@@ -1,10 +1,10 @@
 .hero {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* position: absolute;
     top: 0;
     z-index: -888; */
     width: 100%;
-    height: calc(100vh - 50px);
+    height: 100%;
     position: relative;
 
 }
@@ -78,7 +78,7 @@
 }
 
 .hero-section-description{
-   border: 1px solid orange;
+   /* border: 1px solid orange; */
    padding-inline: 48px;
    padding-block: 48px;
    display: flex;

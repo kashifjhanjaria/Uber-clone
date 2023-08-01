@@ -1,0 +1,33 @@
+.secondsection{
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid red; */
+    margin-top: -3px;
+    position: relative;
+
+}
+.secondsection >img{
+    width: 100%;
+    height: 100%;
+}
+.second-section-text{
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.second-section-heading > h1{
+    font-size: 2.5vw;
+}
+.second-section-btn > button {
+    all: unset;
+    padding-block: 10px;
+    padding-inline: 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+
+}

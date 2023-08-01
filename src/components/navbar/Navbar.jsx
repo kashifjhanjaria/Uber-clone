@@ -4,13 +4,14 @@ import {TfiLayoutGrid4} from 'react-icons/tfi'
 import {ImCross} from "react-icons/im"
 import "./navbar.css"
 import { useRef, useState } from "react"
+import {NavLink} from "react-router-dom"
 const Navbar = ()=>{
     const[opencompanymenu , setOpenCompanyMenu] = useState(false);
     const [lang , setLang] = useState(false);
     // console.log(opencompanymenu);
-    const body = document.body;
+    // const body = document.body;
     const dropdonwArea = useRef(false)
-    const bodyRef = useRef(body)
+    // const bodyRef = useRef(body)
 
     const openCompanyMenuHandle = (e)=>{
         setOpenCompanyMenu(!opencompanymenu);
@@ -42,7 +43,7 @@ const Navbar = ()=>{
         <>
         <div className="navbar" >
             <div className="l-nav ">
-                <a href="" className="logo" >Uber</a>
+                <NavLink to="" className="logo" >Uber</NavLink>
                 <div className="nav">
                     <ul>
                         <li className="dropdown" onClick={openCompanyMenuHandle} >Company 

@@ -6,7 +6,7 @@ import { Routes , Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App b-o">
+    <div className="App ">
       
       <Navbar/>
       <Routes>

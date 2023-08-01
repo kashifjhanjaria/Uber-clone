@@ -1,4 +1,5 @@
-import "./hero.css"
+import "./hero.css";
+import {NavLink} from "react-router-dom"
 const Hero = ()=>{
     return(
         <section className="hero">
@@ -6,7 +7,7 @@ const Hero = ()=>{
            <div className="informationcontainer">
             <div className="hero-section-topicons">
                 <div className="hero-icons">
-                    <a href="">
+                    <NavLink to="">
                     <div className="hero-icon-1">
                     <div className="icon-img">
                     <img src="images/Earn-filled.svg" alt="" />
@@ -14,8 +15,8 @@ const Hero = ()=>{
                      <p>Drive or <br/> deliver</p>
                     
                     </div>
-                    </a>
-                    <a href="">
+                    </NavLink>
+                    <NavLink to="">
                     <div className="hero-icon-1">
                     <div className="icon-img">
                      <img src="images/restaurant-outlined.svg" alt="" />
@@ -23,8 +24,8 @@ const Hero = ()=>{
                      <p>Eat</p>
                   
                     </div>
-                    </a>
-                    <a href="">
+                    </NavLink>
+                    <NavLink to="">
                     <div className="hero-icon-1">
                     <div className="icon-img">
                      <img src="images/car-front-outlined.svg" alt="" />
@@ -32,7 +33,7 @@ const Hero = ()=>{
                      <p>Ride</p>
                      
                     </div>
-                    </a>
+                    </NavLink>
                 </div>
             </div>
             <div className="hero-section-description">
