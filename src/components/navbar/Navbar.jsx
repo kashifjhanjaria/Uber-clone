@@ -41,7 +41,7 @@ const Navbar = ()=>{
     return (
         <>
         <div className="navbar" >
-            <div className="l-nav b-g">
+            <div className="l-nav ">
                 <a href="" className="logo" >Uber</a>
                 <div className="nav">
                     <ul>
