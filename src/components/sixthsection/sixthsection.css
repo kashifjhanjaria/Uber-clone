@@ -1,0 +1,23 @@
+.sixthsection{
+    /* border: 1px solid rebeccapurple; */
+    padding-block: 30px;
+    padding-inline: 100px;
+    display: flex;
+
+    gap: 50px;
+}
+.six-section-box{
+    width: 50%;
+    
+    border-bottom: thin solid black;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-block: 30px;
+}
+.six-sction-icon{
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
