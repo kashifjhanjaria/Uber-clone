@@ -3,14 +3,15 @@ import {MdLanguage} from "react-icons/md"
 import {TfiLayoutGrid4} from 'react-icons/tfi'
 import {ImCross} from "react-icons/im"
 import "./navbar.css"
-import { useRef, useState } from "react"
+import {  useState } from "react"
+import NavbarDropdown from "./NavbarDropdown"
 const Navbar = ()=>{
     const[opencompanymenu , setOpenCompanyMenu] = useState(false);
     const [lang , setLang] = useState(false);
     // console.log(opencompanymenu);
-    const body = document.body;
-    const dropdonwArea = useRef(false)
-    const bodyRef = useRef(body)
+    // const body = document.body;
+    // const dropdonwArea = useRef(false)
+    // const bodyRef = useRef(body)
 
     const openCompanyMenuHandle = (e)=>{
         setOpenCompanyMenu(!opencompanymenu);
@@ -46,7 +47,7 @@ const Navbar = ()=>{
                 <div className="nav">
                     <ul>
                         <li className="dropdown" onClick={openCompanyMenuHandle} >Company 
-                        <span className="dropdownicon"><TiArrowSortedDown/></span></li>
+                        <span className="dropdownicon">{opencompanymenu?<TiArrowSortedDown style={{transform:"rotate(180deg)"}} />:<TiArrowSortedDown/>}</span></li>
                         <li>Safety</li>
                         <li>Help</li>
                     </ul>
@@ -63,19 +64,7 @@ const Navbar = ()=>{
 
             
        {opencompanymenu
-        ? <div className="companymenu" ref={dropdonwArea} id="dropdonwArea"  style={{height:"300px"}}>
-            <ul>
-                <li>About us</li>
-                <li>Our offerings</li>
-                <li>How Uber works</li>
-                <li>Global citizenship</li>
-                <li>Newsroom</li>
-                <li>Investor relations</li>
-                <li>Blog</li>
-                <li>Careers</li>
-                
-            </ul>
-        </div>  :null
+        ? <NavbarDropdown/>  :null
        }
 
 
