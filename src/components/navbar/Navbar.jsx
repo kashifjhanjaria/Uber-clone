@@ -3,12 +3,24 @@ import {MdLanguage} from "react-icons/md"
 import {TfiLayoutGrid4} from 'react-icons/tfi'
 import {ImCross} from "react-icons/im"
 import "./navbar.css"
+<<<<<<< HEAD
 import { useRef, useState } from "react"
 import {NavLink} from "react-router-dom"
 const Navbar = ()=>{
     const[opencompanymenu , setOpenCompanyMenu] = useState(false);
     const [lang , setLang] = useState(false);
    
+=======
+import {  useState } from "react"
+import NavbarDropdown from "./NavbarDropdown"
+const Navbar = ()=>{
+    const[opencompanymenu , setOpenCompanyMenu] = useState(false);
+    const [lang , setLang] = useState(false);
+    // console.log(opencompanymenu);
+    // const body = document.body;
+    // const dropdonwArea = useRef(false)
+    // const bodyRef = useRef(body)
+>>>>>>> navbar
 
     const openCompanyMenuHandle = (e)=>{
         setOpenCompanyMenu(!opencompanymenu);
@@ -33,7 +45,7 @@ const Navbar = ()=>{
                 <div className="nav">
                     <ul>
                         <li className="dropdown" onClick={openCompanyMenuHandle} >Company 
-                        <span className="dropdownicon"><TiArrowSortedDown/></span></li>
+                        <span className="dropdownicon">{opencompanymenu?<TiArrowSortedDown style={{transform:"rotate(180deg)"}} />:<TiArrowSortedDown/>}</span></li>
                         <li>Safety</li>
                         <li>Help</li>
                     </ul>
@@ -50,6 +62,7 @@ const Navbar = ()=>{
 
             
        {opencompanymenu
+<<<<<<< HEAD
         ? <div className="companymenu"  id="dropdonwArea"  style={{height:"300px"}}>
             <ul>
                 <li>About us</li>
@@ -63,6 +76,9 @@ const Navbar = ()=>{
                 
             </ul>
         </div>  :null
+=======
+        ? <NavbarDropdown/>  :null
+>>>>>>> navbar
        }
 
 
