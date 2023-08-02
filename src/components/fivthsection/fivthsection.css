@@ -8,8 +8,12 @@
     /* border: 1px solid red; */
     display: flex;
     padding-block: 30px;
-    
+    margin-top: 70px;
     gap: 30px;
+    transition: margin-top 1s ease;
+}
+.fivth-section-boxes:hover {
+    margin-top: 10px;
 }
 .box{
     border: thin solid lightgray;
@@ -20,6 +24,7 @@
     padding-block: 30px;
     padding-inline: 30px;
     background-color: #fff;
+    cursor: pointer;
     gap: 20px;
 }
 .box-icon{
