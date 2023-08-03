@@ -3,6 +3,7 @@ import {MdLanguage} from "react-icons/md"
 import {TfiLayoutGrid4} from 'react-icons/tfi'
 import {ImCross} from "react-icons/im"
 import "./navbar.css"
+import {NavLink} from "react-router-dom"
 import {  useState } from "react"
 import NavbarDropdown from "./NavbarDropdown"
 const Navbar = ()=>{
@@ -13,20 +14,10 @@ const Navbar = ()=>{
     // const dropdonwArea = useRef(false)
     // const bodyRef = useRef(body)
 
+
     const openCompanyMenuHandle = (e)=>{
         setOpenCompanyMenu(!opencompanymenu);
-        console.log(opencompanymenu);
-        // console.log(e);
-        // console.log(dropdonwArea);
-        // console.log(dropdonwArea.current = !dropdonwArea.current);
-        // console.log(dropdonwArea);
-        // console.log(bodyRef);
-        // console.log(opencompanymenu);
-        // if (opencompanymenu === false) {
-        //     bodyRef.current.addEventListener('click' , ()=>{
-        //         setOpenCompanyMenu(false);
-        //     })
-        // }
+       
         
 
     }
@@ -42,8 +33,8 @@ const Navbar = ()=>{
     return (
         <>
         <div className="navbar" >
-            <div className="l-nav b-g">
-                <a href="" className="logo" >Uber</a>
+            <div className="l-nav ">
+                <NavLink to="" className="logo" >Uber</NavLink>
                 <div className="nav">
                     <ul>
                         <li className="dropdown" onClick={openCompanyMenuHandle} >Company 
@@ -64,12 +55,14 @@ const Navbar = ()=>{
 
             
        {opencompanymenu
+
         ? <NavbarDropdown/>  :null
+
        }
 
 
 
-       {lang ? <div className="languageContainer" style={{height:'calc(100vh - 58px)' }}>
+       {lang ? <div className="languageContainer" style={{height:'calc(100vh - 58px)', zIndex:"99999" }}>
         <div className="close" onClick={closelangcontainer}> <div className="closeicon"><ImCross/></div> </div>
         <h1 className="selectyour" >Select your preferred language</h1>
         <div className="selectedbtn">
