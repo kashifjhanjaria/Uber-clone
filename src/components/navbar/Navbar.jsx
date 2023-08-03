@@ -3,24 +3,15 @@ import {MdLanguage} from "react-icons/md"
 import {TfiLayoutGrid4} from 'react-icons/tfi'
 import {ImCross} from "react-icons/im"
 import "./navbar.css"
-<<<<<<< HEAD
+
 import { useRef, useState } from "react"
 import {NavLink} from "react-router-dom"
-const Navbar = ()=>{
-    const[opencompanymenu , setOpenCompanyMenu] = useState(false);
-    const [lang , setLang] = useState(false);
-   
-=======
-import {  useState } from "react"
 import NavbarDropdown from "./NavbarDropdown"
 const Navbar = ()=>{
     const[opencompanymenu , setOpenCompanyMenu] = useState(false);
     const [lang , setLang] = useState(false);
-    // console.log(opencompanymenu);
-    // const body = document.body;
-    // const dropdonwArea = useRef(false)
-    // const bodyRef = useRef(body)
->>>>>>> navbar
+   
+
 
     const openCompanyMenuHandle = (e)=>{
         setOpenCompanyMenu(!opencompanymenu);
@@ -62,23 +53,7 @@ const Navbar = ()=>{
 
             
        {opencompanymenu
-<<<<<<< HEAD
-        ? <div className="companymenu"  id="dropdonwArea"  style={{height:"300px"}}>
-            <ul>
-                <li>About us</li>
-                <li>Our offerings</li>
-                <li>How Uber works</li>
-                <li>Global citizenship</li>
-                <li>Newsroom</li>
-                <li>Investor relations</li>
-                <li>Blog</li>
-                <li>Careers</li>
-                
-            </ul>
-        </div>  :null
-=======
         ? <NavbarDropdown/>  :null
->>>>>>> navbar
        }
 
 
